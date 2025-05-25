@@ -1,48 +1,95 @@
-## 1.深度学习与 NLP 简介
 
-  * **深度学习** ：作为机器学习的子领域，深度学习通过多层神经网络（如 CNN、RNN、Transformer）自动提取数据特征，广泛应用于计算机视觉（CV）、自然语言处理（NLP）等领域。推荐李沐《动手学深度学习》。
-  * **NLP（自然语言处理）** ：专注于让计算机理解、生成人类语言，核心任务包括文本分类、机器翻译、对话系统等。
 
-## 2.代码基础（Python&Pytorch）资料推荐
-  * Python基础需要自学、需要掌握常见的数据类型、语句、以及其中的面向对象相关的特性。
-  * Pytorch推荐B站**小土堆 PyTorch 教程**、**刘二大人**、**动手学习深度学习相关章节**：
-    * 从环境配置（Anaconda + PyTorch）开始，逐步学习张量操作、模型搭建、训练流程等。.
-    * 特点：代码简单直观，适合培养基础直觉，建议全程跟练。
+## 1. 深度学习与 NLP 简介
 
-参考 [小土堆深度学习入门](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click)、[刘二大人Pytorch](https://www.bilibili.com/video/BV1Y7411d7Ys/?spm_id_from=333.337.search-card.all.click)
+* **深度学习**：作为机器学习的一个重要分支，深度学习通过多层神经网络（如 CNN、RNN、Transformer）自动提取数据特征，广泛应用于计算机视觉（CV）、自然语言处理（NLP）等领域。推荐入门教材：《动手学深度学习》（李沐主讲）。
+* **自然语言处理（NLP）**：旨在让计算机能够理解、生成和处理人类语言，涵盖文本分类、情感分析、命名实体识别、机器翻译、对话系统等核心任务。
 
-## 3.深度学习资料推荐
+---
 
-  * **李沐《动手学深度学习》** ：
-    * 覆盖深度学习核心知识（如反向传播、优化算法）及 CV/NLP 应用（ResNet、BERT 等）。
-    * 学习内容较多，建议选择性学习（如先掌握基础章节），后续结合论文复现时反复查阅。参考 [动手学深度学习](https://space.bilibili.com/1567748478/lists/358497?type=series).
-    * 配套 “[《动手学深度学习》书](https://zh.d2l.ai/)”，看不惯网页版，可以 [Z - Library](https://zh.z-lib.gd/)（梯子）自取。
+## 2. 代码基础学习资料（Python & PyTorch）
 
-## 4.NLP相关资料推荐
+* **Python 基础**：建议自学掌握常见的数据结构（如列表、字典）、控制语句、函数、类与对象等基本语法。
+* **PyTorch 入门推荐**：
 
-  * 参考车万翔《自然语言处理 - 基于预训练模型的方法》。仔细认真读完，[Z - Library](https://zh.z-lib.gd/)（梯子）自取。
-  * 参考斯坦福 NLP 课程 [Stanford NLP CS224n](https://web.stanford.edu/class/cs224n/) （强烈推荐）.
-  * 或参考唐宇迪的[NLP入门课](https://www.bilibili.com/video/BV19VfeYMECH/?spm_id_from=333.337.search-card.all.click&vd_source=47decd48e950a191add86bdbf724a794)，重点学习词向量、文本预处理等基础内容，结合代码实践（基于PyTorch）。
+  * [小土堆 PyTorch 教程](https://www.bilibili.com/video/BV1hE411t7RN/)
+  * [刘二大人 PyTorch 系列](https://www.bilibili.com/video/BV1Y7411d7Ys/)
+  * 《动手学深度学习》中 PyTorch 实现部分
 
-## 5.推荐入门路线推荐
-* **阶段一（深度学习理论与代码基础）**：[李沐：动手学深度学习](https://space.bilibili.com/1567748478/lists/358497?type=series)（长期）结合 [小土堆深度学习入门](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click)
- 
-* **阶段二（自然语言处理理论与实战）**：
-斯坦福NLP入门课+ 唐宇迪的NLP入门课 + 车万翔《自然语言处理 - 基于预训练模型的方法》
+  ✅ **学习建议**：
 
-PS：（1）小土堆、李沐课并行进行。（2）NLP 入门课和车万翔的书，可以做入门练习项目时候，在实践中学习。
+  * 从环境配置（Anaconda + PyTorch）开始，逐步掌握张量操作、模型构建、前向传播、反向传播、训练与评估流程；
+  * 教程代码简洁直观，建议全程动手跟练，形成“代码肌肉记忆”。
 
-## 6.NLP 核心模型学习建议
+---
 
-  * **必学模型** ：
-  （1）基础深度学习模型：MLP、CNN、LSTM、注意力机制、Transformer等。
-  （2）预训练语言模型：BERT、GPT1、GPT2、BART、T5等。
-  
-  * **学习要求** ：
-  （1）论文精读：逐句理解模型动机、架构细节（如 Self - Attention、预训练目标），推导关键公式（如 Transformer 的 QKV 计算）。
-  （2）代码复现：吃透框架源码，分析所有使用到的函数的作用。
+## 3. 深度学习经典资料推荐
 
-  * **关键点** ：
-  （1）Transformer 是基石，需达到手推公式、裸写代码的熟练度。
-  （2）学习路线：理论 → 源码 → 改进（如修改 Attention 头数观察效果）
+* **《动手学深度学习》**（李沐主讲）：
+
+  * 内容覆盖反向传播、优化算法、卷积网络、循环网络、Transformer、BERT 等；
+  * 学习量较大，建议先掌握基础章节，后续在模型复现中反复查阅；
+  * 推荐配套阅读 [书籍官网](https://zh.d2l.ai/)，或通过 [Z-Library](https://zh.z-lib.gd/)（需科学上网）获取本地 PDF 版本。
+
+---
+
+## 4. NLP 经典资料推荐
+
+* **教材推荐**：
+
+  * 《自然语言处理——基于预训练模型的方法》（车万翔）——系统性强，建议精读；
+* **课程推荐**：
+
+  * [斯坦福 CS224n：自然语言处理与深度学习](https://web.stanford.edu/class/cs224n/)（强烈推荐，含 Transformer、词向量等核心内容）；
+  * [唐宇迪 NLP 入门课](https://www.bilibili.com/video/BV19VfeYMECH/)——适合入门阶段，讲解基础 NLP 概念并配有实战代码。
+
+---
+
+## 5. 推荐入门学习路线
+
+* **阶段一：深度学习理论与代码基础**
+  主线资源：
+
+  * [小土堆 PyTorch 教程](https://www.bilibili.com/video/BV1hE411t7RN/)
+  * [动手学深度学习（李沐）](https://space.bilibili.com/1567748478/lists/358497?type=series)
+
+* **阶段二：自然语言处理理论与实战**
+  组合学习资源：
+
+  * [斯坦福 CS224n](https://web.stanford.edu/class/cs224n/)
+  * [唐宇迪 NLP 入门课](https://www.bilibili.com/video/BV19VfeYMECH/)
+  * 《自然语言处理——基于预训练模型的方法》（车万翔）
+
+📌 **学习建议**：
+
+* 阶段一和阶段二可以并行推进；
+* NLP 理论与实战课程可以结合项目实践同步进行，边做边学效果最佳。
+
+---
+
+## 6. NLP 核心模型学习建议
+
+### ✅ 必学模型
+
+* **基础深度学习模型**：
+
+  * MLP（多层感知机）、CNN（卷积神经网络）、RNN（循环神经网络）、LSTM、Attention、Transformer 等；
+* **经典预训练语言模型**：
+
+  * BERT、GPT（1/2）、BART、T5 等。
+
+### 📖 学习要求
+
+* **论文精读**：
+
+  * 逐句理解核心论文内容，掌握模型设计动机与结构，推导关键公式（如 Transformer 中 QKV 计算）。
+* **源码复现**：
+
+  * 吃透关键实现，掌握每一个函数的功能和模块的组织逻辑。
+
+### 🔍 学习重点
+
+* Transformer 是 NLP 任务的核心模型，建议达到“能手推公式 + 能独立写出核心模块代码”的程度；
+* 推荐学习路线：**理论 → 源码分析 → 改进实验（如更改 attention head 数量观察性能）**。
+
 
