@@ -14,7 +14,7 @@
 
 * [🧠 深度学习与 NLP 基础知识](./Deep-NLP-Foundations.md)
 * [📈 大语言模型学习路线图](./LLM-Roadmap.md)
-* [🚀 NLP 入门项目推荐](./NLP-Starter-Projects.md)
+* [🚀 NLP 入门项目推荐](./​​NLP-Starter-Projects.md)
 
 ## 🧭 NLP 指导小组
 
