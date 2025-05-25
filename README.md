@@ -10,6 +10,13 @@
 - 🛠 **环境与工具**：Python、PyTorch、Hugginface、Pytorch-Lightning 等实用工具
 - 🎯 **项目实践内容**：适合新生参与的入门项目和建议、提供基础模型搭建与经典任务（如文本分类、命名实体识别、大语言模型指令微调）代码。
 
+项目内容导航如下：
+
+- [🧠 深度学习与NLP基础知识](./Deep-NLP-Foundations.md)
+- [📈 大语言模型学习路线图](./LLM-Roadmap.md)
+- [🚀 NLP入门项目推荐](./NLP-Starter-Projects.md)
+
+
 ## 🧭 NLP指导小组
 
 教师：宁金忠
