@@ -17,7 +17,7 @@
 * [🚀 NLP 入门项目推荐](./​​NLP-Starter-Projects.md)
 * [📄 NLP领域高质量会议和期刊推荐列表](./NLP_Top_Conferences_Journals_List.md)
 
-## 🧭 NLP 指导小组
+## 🧭 NLP 带学小组
 
 * 教师：宁金忠
 * 博士生：穆文轩
