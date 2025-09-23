@@ -23,9 +23,9 @@
 * 更多内容模块持续建设中……
 
 ### 📂 多模态学习
-* [🧭 语音学习引导](Speech-Learning/Guidance.md)
-* [🗣️ 语音Speech基础知识](​​Speech-Learning/1-Basic.md)
-* [🚀 语音Speech进阶知识](Speech-Learning/2-Deep.md)
+* [🧭 语音学习引导](./Speech-Learning/Guidance.md)
+* [🗣️ 语音Speech基础知识](​​./Speech-Learning/1-Basic.md)
+* [🚀 语音Speech进阶知识](./Speech-Learning/2-Deep.md)
 
 
 
