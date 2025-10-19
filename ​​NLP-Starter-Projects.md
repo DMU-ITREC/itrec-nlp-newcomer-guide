@@ -129,146 +129,17 @@
 * 参考指标：
 
   GPT4o: F1:70%-80%
+  
   Qwen2.5-72B和deepseek-v3稍弱，65%-75%之间
+  
   GPT-4o接口推荐api网站：https://api.gpt.ge
+  
   Qwen和DS推荐api网站：https://openrouter.ai/ 这里有免费的api调用次数
 
 * 重点注意：
+  
   如何设定prompt让llm返回你想要的格式？也就是说，如何从输出文本解析实体。
+  
   建议调研json_repair库，方便解析prompt。接口有参数，可以设定固定的json返回格式，但不一定满足所有任务需求。
+  
   如何计算F1？建议完全自己手写，F1需要解析的结果完整匹配才算对。即strict match而不是partial match。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-当然可以！以下是按照你提供的格式与风格，为 **“ICL-NER 实战项目”** 编写的完整项目指南，保持了与你实验室 Demo 文档一致的排版、层次和细节。
-
----
-
-# 🚀 实战 Demo 指南：ICL-NER（In-Context Learning 实体识别）
-
-本指南面向具备基础自然语言处理与大语言模型（LLM）使用经验的同学，旨在帮助大家掌握**利用大模型的上下文学习能力（In-Context Learning, ICL）完成命名实体识别任务**的基本方法。项目基于 API 方式调用大语言模型，通过精心设计的 prompt 实现零样本或少样本实体识别实验。
-
----
-
-## 📂 数据集获取
-
-* 🔗 [百度网盘下载](https://pan.baidu.com/s/10XRGQAIKGDI5eWLjmaB9Xg?pwd=1111)
-* 🔑 提取码：`1111`
-* 数据路径：`demo4_ICL_NER`
-* 说明：本实验推荐使用 **BC5CDR** 数据集，可选取**前 500 条样本**作为实验集（含化学品与疾病两类实体）。
-
----
-
-## 🧪 Demo 4：ICL 实体识别任务（In-Context Learning NER）
-
-### ✅ 任务目标
-
-通过**大语言模型 API（如 GPT-4、Qwen2.5、GLM-4、Claude 等）** 实现命名实体识别任务，掌握以下核心技能：
-
-1. Prompt 模板设计与上下文示例构造；
-2. 使用少样本学习实现实体识别；
-3. 评估大模型在不同提示策略下的 NER 表现。
-
----
-
-### 🔧 实现要求
-
-1. **模型调用方式**
-
-   * 使用 OpenAI、阿里通义、智谱 AI 或其他可用大模型 API；
-   * 需自行编写 Python 脚本实现接口调用；
-   * 建议封装统一的接口函数，便于批量处理。
-
-2. **Prompt 设计与实验设置**
-
-   * 设计多种 Prompt 模板：
-
-     * **零样本 (Zero-shot)**：直接要求模型识别文本中的实体；
-     * **少样本 (Few-shot)**：在输入中提供 1～3 个示例；
-   * 对比不同 Prompt 结构、上下文数量对识别效果的影响。
-
-3. **数据与输出**
-
-   * 输入：BC5CDR 前 500 条文本；
-   * 输出：每条文本对应的识别结果（化学品、疾病两类实体）；
-   * 格式示例：
-
-     ```json
-     {
-       "text": "Aspirin is used to treat headache.",
-       "entities": [
-         {"entity": "Aspirin", "type": "Chemical"},
-         {"entity": "headache", "type": "Disease"}
-       ]
-     }
-     ```
-
-4. **可视化与分析**
-
-   * 使用 [SwanLab](https://www.swanlab.cn/) 或 matplotlib/seaborn 进行实验记录与结果可视化；
-   * 对不同 prompt 设计、样本数量下的 F1 值变化进行分析。
-
----
-
-### ⚙️ 技术实现参考
-
-| 模块    | 推荐实现                            |
-| ----- | ------------------------------- |
-| 模型调用  | OpenAI / 通义千问 / 智谱AI API        |
-| 实验语言  | Python                          |
-| 可视化工具 | SwanLab / matplotlib            |
-| 指标计算  | 精确率 (Precision)、召回率 (Recall)、F1 |
-
----
-
-### 📊 实验汇报要求
-
-* **参考指标：**
-  F1 ≈ 70%（Zero-shot 基线）
-  F1 ≈ 80%（Few-shot 优化后）
-
-* **汇报内容要求：**
-
-  1. 对比不同 Prompt 模板与样本数量下的实验结果；
-  2. 分析大模型识别错误的典型案例；
-  3. 结合可视化图表（如 F1-变化曲线、示例对比），阐述模型的上下文理解能力；
-  4. 讨论 ICL 的优势与局限性（如对上下文数量敏感、结果随机性等）。
-
----
-
-### 🌟 可选进阶探索
-
-* 尝试不同大模型（GPT-4、Qwen2.5、GLM-4-turbo）在同一任务下的表现差异；
-* 将 ICL 与 **LoRA 微调结果（Demo 3）** 对比，分析二者在性能、成本、可解释性上的区别；
-* 尝试引入 Chain-of-Thought 或逐步提示策略（Step-by-step Prompting）提升识别准确率。
-
----
-
-### 📘 参考资料
-
-* [BC5CDR 数据集论文 (BioCreative V)](https://aclanthology.org/W15-1501.pdf)
-* [In-Context Learning Survey](https://arxiv.org/abs/2301.00234)
-* [OpenAI API 文档](https://platform.openai.com/docs)
-* [SwanLab 可视化平台](https://www.swanlab.cn/)
-
----
-
-是否希望我帮你**补充一份可直接运行的项目结构与示例代码框架**（包括 API 调用、prompt模板与评估脚本）？那样你就可以直接交给新生做实验了。
-
