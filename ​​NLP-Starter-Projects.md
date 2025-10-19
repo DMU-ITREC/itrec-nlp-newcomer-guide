@@ -126,7 +126,7 @@
 
 ### 📊 实验汇报要求
 
-* 🔗 数据集：[百度网盘下载](https://pan.baidu.com/s/1FbrCE0j1WZthvVM6c8v2WQ?pwd=kuiw))
+* 🔗 数据集：[百度网盘下载](https://pan.baidu.com/s/1FbrCE0j1WZthvVM6c8v2WQ?pwd=kuiw)
 * 🔑 提取码: kuiw   
 
 * 参考指标：
@@ -146,4 +146,5 @@
   建议调研json_repair库，方便解析prompt。接口有参数，可以设定固定的json返回格式，但不一定满足所有任务需求。
   
   如何计算F1？建议完全自己手写，F1需要解析的结果完整匹配才算对。即strict match而不是partial match。
+
 
