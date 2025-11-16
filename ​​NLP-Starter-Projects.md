@@ -36,12 +36,11 @@
 
 ### ✅ 任务目标
 
-同时加载[bert-base-chinese](https://huggingface.co/google-bert/bert-base-chinese)模型和[chinese-bert-wwm](https://huggingface.co/hfl/chinese-bert-wwm)，完成weibo和msra二个数据集中文实体识别任务，理解序列标注模型的构建逻辑与评估指标。
+分别使用[bert-base-chinese](https://huggingface.co/google-bert/bert-base-chinese)模型和[chinese-bert-wwm](https://huggingface.co/hfl/chinese-bert-wwm)，完成weibo和msra二个数据集中文实体识别任务，理解序列标注模型的构建逻辑与评估指标。
 
 ### 🔧 实现要求
 
 1. 使用 PyTorch 和 Hugging Face 生态，**独立完成以下模块**：
-
    * 数据加载与预处理（BIO标注格式）
    * 模型设计与训练流程
    * 模型评估与结果可视化
@@ -163,6 +162,7 @@
    * 报告中需展示不同 Prompt 方案下的 F1 值变化趋势。
 
 ---
+
 
 
 
