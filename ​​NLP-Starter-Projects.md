@@ -46,7 +46,7 @@
    * 模型设计与训练流程
    * 模型评估与结果可视化
 2. 使用 [SwanLab](https://www.swanlab.cn/) 等工具进行训练过程与结果的可视化。
-3. 使用**微博实体识别数据集和MSRA实体识别数据集**，详见网盘数据集中的demo2实体识别，[微博数据来源参考](https://aclanthology.org/D15-1064.pdf)[MSRA数据来源参考](https://tianchi.aliyun.com/dataset/144307)。
+3. 使用**微博实体识别数据集和MSRA实体识别数据集**，详见网盘数据集中的demo2实体识别，[微博数据来源参考](https://aclanthology.org/D15-1064.pdf)、[MSRA数据来源参考](https://tianchi.aliyun.com/dataset/144307)。
 
 ### 📊 实验汇报要求
 
@@ -163,6 +163,7 @@
    * 报告中需展示不同 Prompt 方案下的 F1 值变化趋势。
 
 ---
+
 
 
 
