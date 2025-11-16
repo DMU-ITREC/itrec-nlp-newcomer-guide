@@ -36,7 +36,7 @@
 
 ### ✅ 任务目标
 
-分别使用[bert-base-chinese](https://huggingface.co/google-bert/bert-base-chinese)模型和[chinese-bert-wwm](https://huggingface.co/hfl/chinese-bert-wwm)，完成weibo和msra二个数据集中文实体识别任务，理解序列标注模型的构建逻辑与评估指标。
+分别使用下面二个bert预训练模型[bert-base-chinese](https://huggingface.co/google-bert/bert-base-chinese)和[chinese-bert-wwm](https://huggingface.co/hfl/chinese-bert-wwm)，完成weibo和msra二个数据集中文实体识别任务，理解序列标注模型的构建逻辑与评估指标。
 
 ### 🔧 实现要求
 
@@ -162,6 +162,7 @@
    * 报告中需展示不同 Prompt 方案下的 F1 值变化趋势。
 
 ---
+
 
 
 
