@@ -16,7 +16,7 @@
 
 * [🧠 深度学习与 NLP 基础知识](./Deep-NLP-Foundations.md)
 * [📈 大语言模型(LLM)学习路线图](./LLM-Roadmap.md)
-* [🚀 NLP 入门项目推荐](./​​NLP-Starter-Projects.md)
+* [🚀 NLP 入门练习项目推荐](./​​NLP-Starter-Projects.md)
 * [📄 NLP领域高质量会议和期刊推荐列表](./NLP_Top_Conferences_Journals_List.md)
 * 🧭 语音处理[入门指南](./Speech-Learning/Guidance.md)、[基础知识](./Speech-Learning/1-Basic.md)、[进阶知识](./Speech-Learning/2-Deep.md)
 * [📑 NLP & LLM 经典论文推荐列表]（建设中……）
