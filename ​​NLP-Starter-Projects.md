@@ -74,9 +74,9 @@
 
 * 参考指标：
 
-  Qwen2.5-7B-lora：显存占用27G、F1:84%
+  Qwen2.5-7B-lora：batch_isze:4 显存占用27G、F1:84%
 
-  Qwen2.5-7B-qlora：显存占用12G、F1:83%
+  Qwen2.5-7B-qlora：batch_isze:4 显存占用12G、F1:83%
 
 * 参数调优对实体识别性能的变化趋势
 
@@ -162,6 +162,7 @@
    * 报告中需展示不同 Prompt 方案下的 F1 值变化趋势。
 
 ---
+
 
 
 
