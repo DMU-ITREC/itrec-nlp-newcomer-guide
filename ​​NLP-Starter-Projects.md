@@ -68,7 +68,7 @@
    * 模型评估与结果可视化
 2. 使用 [SwanLab](https://www.swanlab.cn/) 等工具进行训练过程与结果的可视化。
 3. 使用**bc2gm**数据集，详见网盘数据集中的demo3指令微调，[数据来源参考](https://github.com/spyysalo/bc2gm-corpus?utm_source=chatgpt.com)。
-4. 在学习微调流程时，可以参考 [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory) 和 Firefly 等开源框架的实现，同时配合阅读 Hugging Face Trainer 的源码，加深对整体训练流程的理解。
+4. 在学习微调流程时，参考 [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory) 和 Firefly 等开源框架的实现，同时配合阅读 Hugging Face Trainer 的源码，加深对整体训练流程的理解。
 
 ### 📊 实验汇报要求
 
@@ -162,6 +162,7 @@
    * 报告中需展示不同 Prompt 方案下的 F1 值变化趋势。
 
 ---
+
 
 
 
